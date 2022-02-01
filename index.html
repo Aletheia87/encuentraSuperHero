@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="Assets/Img/favicon.ico" />
+    <link href="Assets/CSS/style.css" rel="stylesheet">
+    <!-- Bootstrap 4.6.0 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- JQuery 3.5.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>SuperHero</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray">
+        <a class="navbar-brand" href="#">SuperHero</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item inactive">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item inactive">
+                    <a class="nav-link" href="mailto:contacto@superherochile.com">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="cabecera">
+        <img src="Assets/Img/sh1.jpg" alt="SuperHero">
+        <h1 id="titulo">Encuentra tu SuperHero</h1>
+    </header>
+
+    <section>
+        <div class="card border-light" id="search">
+            <div class="card-body">
+                <p id="txt">Ingresa el número de tu SuperHero</p>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" id="idSuperHero" type="search" placeholder="Id entre 1 y 731"
+                        aria-label="Search">
+                    <button class="btn btn-outline-secondary my-5 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center dark" id="respuesta">
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col" id="superHeroFoto">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h3 class="card-title" id="superHeroTitle"></h3>
+                        <div class="card-text" id="superHeroInfo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card border-light">
+            <div class="card-body">
+                <h3 class="card-title" id="graficoTitle"></h3>
+                <div id="superHeroStats"> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray">
+        <p>© 2021 SuperHero Chile.</p>
+    </footer>
+
+    <!-- AMCharts -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/spiritedaway.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="Assets/JS/script.js"></script>
+</body>
+
+</html>
